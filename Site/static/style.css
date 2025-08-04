@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Les navigateurs mettent par défaut des marges (margin) et des paddings (padding) sur plusieurs éléments (comme <body>, <h1>, <ul>, etc.), ce qui peut gêner la mise en page.*/
+/*En mettant margin: 0; padding: 0;, tu supprimes ces valeurs par défaut pour avoir un point de départ propre et uniforme.*/
+
+body{
+    background: url(https://i.pinimg.com/originals/84/8c/90/848c90b3fdacf79ba9299706be8ed5b5.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;                  /*Transforme le body en boîte flexible (flexbox).Cela permet de centrer ou organiser facilement les éléments enfants (comme une section, un formulaire, etc.).*/
+    align-items: center;            /*centre verticalement*/
+    justify-content: center;        /*centre horizontalement*/
+    height: 100vh;                  /*prend la taille de l'ecran*/
+}
+
+section{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    padding: 30px;    /*met 30px a gauche et a droite*/
+    width: 420px;     /*la largeur de gauche a droite*/
+    border-radius: 20px; 
+
+}
+
+section h1{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px; /*Ça crée un espace de 20 pixels entre ce titre et l’élément qui vient juste après dans la page*/
+}
+
+
+.input-box{
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+
+}
+
+.input-box input{
+    border-radius: 25px;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding-right: 40px;
+
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.remerber-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.remerber-forget a , .register-link a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-weight: bold;
+
+}
+
+.remerber-forget a:hover ,.register-link a:hover{
+    text-decoration: underline;
+}
+
+
+.login-btn{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 25px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.login-btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2)
+
+}
+
+.register-link{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+}

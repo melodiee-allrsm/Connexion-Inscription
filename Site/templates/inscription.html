@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'inscription.css' %}">
+</head>
+<body>
+    <section>
+        <h1>Inscription</h1>
+            <div class="input-box">
+            <label>Nom</label>
+            <input type="text" placeholder="Nom">
+        </div>
+        <div class="input-box">
+            <label>Prenom</label>
+            <input type="text" placeholder="Prenom">
+        </div>
+        <div class="input-box">
+            <label> Email </label>
+            <input type="text" placeholder="Email">              
+        </div>
+        <div>
+            <p> Genre :</p> 
+            <label for=""><input type="radio" genre="name" value="masculin" id="genre">Masculin</label>
+            <label for=""><input type="radio" genre="name" value="feminim" id="genre">Feminin</label>
+        </div>
+        <div class="input-box">
+            <label>Téléphone</label>
+            <input type="text" placeholder="Téléphone">
+        </div>
+         <div class="input-box">
+            <label>Date de naissance</label> 
+            <input type="text" placeholder="Date de naissance">
+        </div>
+         <div class="input-box">
+            <label>Mot de passe </label>
+            <input type="text" placeholder="Mot de passe">
+        </div>
+         <div class="input-box">
+            <label>Confirmez le mot de passe</label>
+            <input type="text" placeholder="Confirmer le mot de passe">
+         </div>       
+    </section>
+</body>
+</html>
