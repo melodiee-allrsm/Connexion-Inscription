@@ -7,17 +7,13 @@
     font-family: "Poppins", sans-serif;
 }
 
-/*Les navigateurs mettent par défaut des marges (margin) et des paddings (padding) sur plusieurs éléments (comme <body>, <h1>, <ul>, etc.), ce qui peut gêner la mise en page.*/
-/*En mettant margin: 0; padding: 0;, tu supprimes ces valeurs par défaut pour avoir un point de départ propre et uniforme.*/
-
 body{
     background: url(https://i.pinimg.com/originals/84/8c/90/848c90b3fdacf79ba9299706be8ed5b5.jpg);
     background-position: center;
     background-size: cover;
-    display: flex;         /*Transforme le body en boîte flexible (flexbox).Cela permet de centrer ou organiser facilement les éléments enfants (comme une section, un formulaire, etc.).*/
-    align-items: center;            /*centre verticalement*/
-    justify-content: center;        /*centre horizontalement*/
-    height: 100vh;                  /*prend la taille de l'ecran*/
+    display: flex;         
+    justify-content: center;        
+    height: 100vh;                  
 }
 
 section{
@@ -25,8 +21,8 @@ section{
     background-color: transparent;
     border: 2px solid rgba(103, 24, 24, 0.2);
     backdrop-filter: blur(30px);
-    padding: 30px;    /*met 30px a gauche et a droite*/
-    width: 630px;     /*la largeur de gauche a droite*/
+    padding: 30px;    
+    width: 630px;     
     border-radius: 20px;
      max-height: 90vh;
     height: auto;
@@ -48,7 +44,7 @@ section h1{
     font-size: 30px;
     text-align: center;
     color: white;
-    margin-bottom: 20px; /*Ça crée un espace de 20 pixels entre ce titre et l’élément qui vient juste après dans la page*/
+    margin-bottom: 20px; 
 }
 
 .input-box{
